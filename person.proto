@@ -1,0 +1,16 @@
+package protobuf.person;
+
+option java_package = "protobuf.person";
+option java_outer_classname = "PersonClass";
+
+message Person {
+  required string user_name       = 1;
+  optional int64  favorite_number = 2;
+  repeated string interests       = 3;
+}
+
+message FamousPerson {
+  required string user_name = 1;
+  required string profession_name = 2;
+  repeated string interests = 3;
+}
