@@ -1,4 +1,4 @@
-package org.example;
+package logging;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -37,7 +37,7 @@ public class LogAggregator {
     public void aggregate(int timeWindow) throws IOException {
         // Add the streaming_service_log.txt file to repo
         // File generated using BingAI. Generate larger file if desired
-        File file = new File("src/main/java/org/example/streaming_service_log.txt");
+        File file = new File("src/main/java/logging/streaming_service_log.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
         String line;
 
